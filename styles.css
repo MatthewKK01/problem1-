@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+:root{
+--Softblue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Verydarkblue-mainBG: hsl(217, 54%, 11%);
+--Verydarkblue-cardBG: hsl(216, 50%, 16%);
+--Verydarkblue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Verydarkblue-mainBG);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+html{
+    font-family: 'Outfit', sans-serif;
+}
+.container{
+    padding: 25px;
+    border-radius: 18px;
+    margin: 0 auto;
+    width: 350px;
+    background-color: var(--Verydarkblue-cardBG);
+}
+.card .equilibrium{
+    width: 100%;
+    margin-bottom: 18px;
+}
+.card h3{
+    font-weight:600;
+    color: var(--White);
+    margin-bottom: 18px;
+}
+.text p{
+    font-size: 18px;
+    color: var(--Softblue);
+    font-weight: 100;
+}
+.text{
+    margin-bottom: 20px;
+}
+.offer{
+    display: flex;
+    justify-content: space-between;
+}
+.offer .icon{
+    width: 12px;
+}
+.cost{
+    display: flex;
+    gap: 8px;
+}
+.cost p{
+    color: var(--Cyan);
+}
+.ends{
+    display: flex;
+    gap: 8px;
+}
+.ends img{
+    width: 20px;
+}
+.ends p{
+    color: var(--Softblue);
+}
+.card hr{
+    color: var(--Verydarkblue-line);
+    margin-block: 20px;
+}
+.creator{
+    display: flex;
+    gap: 18px;
+}
+.creator img{
+    width: 40px;
+    border: 1px white solid;
+    border-radius: 50%;
+}
+.creator span{
+    color: var(--Softblue);
+    display: flex;
+    align-items: center;
+}
+.creator span>a{
+    color: var(--White);
+}
